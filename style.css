@@ -1,0 +1,626 @@
+/*==========================================*/
+/*============PARAMETRES GENERAUX===========*/
+/*==========================================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  margin: 0;
+}
+
+#blocpage {
+  width: 100%;
+  max-width: 1440px;
+  min-width: 375px;
+  margin: auto;
+  font-size: 15px;
+}
+
+header {
+  width: 93%;
+  max-width: 1340px;
+  margin: auto;
+}
+
+main {
+  width: 93%;
+  max-width: 1340px;
+  margin: auto;
+}
+
+footer {
+  width: 100%;
+  max-width: 1440px;
+  min-width: 375px;
+  margin: auto;
+}
+
+.blocpage_hebergements_marseille,
+.blocpage_populaires,
+footer {
+  background-color: #f2f2f2;
+}
+
+.fas {
+  color: #0065fc;
+  font-size: 0.7em;
+}
+
+a,
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+/*==========================================*/
+/*================BLOC HEADER===============*/
+/*==========================================*/
+
+/*********Zone Logo et Navigateur ***********/
+
+.logo_nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 95px;
+  align-items: flex-end;
+}
+
+.logo img {
+  width: 95px;
+}
+
+nav {
+  width: 420px;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+/*****************Zone liens*****************/
+
+.heberg,
+.sinscrire {
+  color: #0065fc;
+
+  padding-right: 25px;
+  padding-left: 25px;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.heberg {
+  padding-top: 50px;
+}
+
+.activ {
+  text-decoration: none;
+  color: black;
+  padding-top: 50px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin: 0;
+}
+
+.sinscrire {
+  font-weight: bold;
+}
+
+.activ:hover,
+.heberg:hover {
+  color: #0065fc;
+  border-top: 3px #0065fc solid;
+  
+}
+
+
+/*==========================================*/
+/*======SECTION PARAMETRES ET CHOIX=========*/
+/*==========================================*/
+
+/*********Titre et description**************/
+
+.zone_Titre_description  {
+  
+  margin-top: 30px;
+ 
+}
+.zone_Titre_description h1 {
+ 
+  margin-left: 0;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.zone_Titre_description p {
+  font-weight: normal;
+  margin: 10px 0 15px 0;
+  font-size: 1rem;
+}
+
+/***********Zone de Recherche**************/
+
+.cadre_zone_recherche {
+  padding: 0;
+  display: flex;
+  width: 420px; /*420px; soit 31%;*/
+  height: 50px;
+
+  border-radius: 15px 15px 15px 15px;
+  border: #f2f2f2 1px solid;
+}
+
+.cadre_zone_recherche div {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadre_icone_localisation {
+  height: 50px;
+  padding: 0;
+  background-color: #f2f2f2;
+  border-radius: 15px 0 0 15px;
+
+  flex: 1; /*  ou width: 50px; ou 11.9%;*/
+}
+
+.cadre_icone_ville {
+  height: 50px;
+  padding: 0;
+
+  flex: 4.7; /* ou width: 235px; 55.95%;*/
+}
+
+.cadre_icone_bouton {
+  height: 50px;
+  padding: 0;
+  border-radius: 0px 15px 15px 0;
+  background-color: #0065fc;
+
+  flex: 2.7; /*  ou width: 135px;32.14%;*/
+}
+
+.fa-map-marker-alt {
+  font-size: 1.1rem;
+  border: none;
+  color: black;
+}
+
+.bouton_ville {
+  border: none;
+  height: 96%;
+  width: 100%;
+  padding-left: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  /*border: #f2f2f2 1px solid;*/
+}
+
+.bouton_ville::placeholder {
+  color: black;/* ne fonctionne pa sur firefox*/
+  font-weight: bold;
+}
+
+.bouton_rechercher {
+  background-color: #0065fc;
+  color: white;
+  border: none;
+  border-radius: 0px 15px 15px 0;
+  font-size: 1.1rem;
+}
+
+.fa-search {
+  display: none;
+}
+
+/***********Zone de Filtres**************/
+
+.zone_filtres {
+  display: flex;
+  align-items: center;
+
+  width: 930px; /*69%;*/
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.designation {
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 50px;
+  margin-right: 20px;
+  flex: 1;
+}
+.filtres {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 13;
+  list-style-type: none;
+  margin: 0; /* a verifier*/
+  margin-left: 0;
+  padding: 0;
+}
+
+.filtres li {
+  border: #f2f2f2 3px solid;
+  border-radius: 48px;
+  height: 48px;
+  border-left: none;
+  padding-right: 10px;
+
+  display: flex;
+  align-items: center;
+
+   font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.filtres li:hover {
+  box-shadow: 6px 6px 10px #deebff;
+  border: #deebff 2px solid;
+  transform: scale(1.1,1.1);
+}
+
+.filtres .fas {
+  color: #0065fc;
+  background-color: #deebff;
+}
+
+.cadre_eco,
+.cadre_fam,
+.cadre_rom,
+.cadre_ani {
+  width: 50px;
+  height: 50px;
+  background-color: #deebff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.zone_filtres .fas {
+  font-size: 1em;
+}
+
+/*************Zone Infos***************/
+
+.zone_info {
+  display: flex;
+  align-items: baseline;
+  width: 100%; /* soit 445px */
+  height: auto;
+  margin-bottom: 10px;
+  /*font-size: 0.8em; a gerer*/
+}
+
+.zone_info .fa-info {
+  color: #0065fc;
+  border: 1px #f2f2f2 solid;
+  font-size: 1em;
+  width: 26px;
+  height: 21px;
+  padding-top: 5px;
+  margin-left: 0px;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 0.8em;
+}
+
+.zone_info p {
+  margin-bottom:30px;
+  margin-left: 10px;
+  width: 89%;
+  min-width: 310px; /*blocage saut ligne*/
+}
+
+/*==========================================*/
+/*====SECTION HEBERGEMENT ET POPULAIRES=====*/
+/*==========================================*/
+
+#section_hebergements {
+  width: 100%; /*1340px; soit*/
+  display: flex;
+  justify-content: space-between;
+}
+
+/********Zone Hebergement Marseille**********/
+
+
+.blocpage_hebergements_marseille {
+  width: 66%; /*880px; flex:2; soit  height: 625px; ok*/
+  border-radius: 20px;
+}
+
+.blocpage_hebergements_marseille h2 {
+  margin-left: 30px; /*soit 3% ok */
+  margin-top: 40px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.zone_resultats_hebergements {
+  width: 100%; /*880px;  soitok*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*justify-content: space-around;*/
+  height: 460px;/*430px;*/
+}
+
+.card_vignette {
+  margin:14px;
+  border-radius: 15px;
+  background-color: white;
+  width: 245px; /*soit 28% ok */
+  height: 200px;
+  box-shadow: 6px 6px 10px rgb(214, 214, 214);
+}
+
+.vignette_hebergement {
+  border-radius: 15px 15px 0 0;
+  width: 235px; /*soit 96%;ok */
+  height: 115px;
+  padding: 5px;
+  object-fit: cover;
+}
+
+.card_vignette:hover {
+  box-shadow: 15px 15px 10px rgb(214, 214, 214);
+}
+
+.card_vignette * {
+  margin: 0px;
+}
+
+.card_vignette h3 {
+  /* margin-top: 10px; annulation car passage de h5 a h3*/
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.card_vignette p {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  font-size: 0.9em;
+}
+
+.card_vignette .fa-star {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.notation_cannebiere,
+.notation_port,
+.notation_mouettes,
+.notation_mer,
+.notation_panier,
+.notation_amina {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.notation_cannebiere .fas:nth-child(5),
+.notation_mouettes .fas:nth-child(5),
+.notation_mer .fas:nth-child(4),
+.notation_mer .fas:nth-child(5),
+.notation_panier .fas:nth-child(5) {
+color: #dfdddd;
+}
+
+.plus {
+  margin-left: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/**************Zone Populaires**************/
+
+.blocpage_populaires {
+  width: 32%; /*420px;  soit ok*/
+  border-radius: 20px;
+  /* flex:1;*/
+}
+
+.blocpage_populaires h2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 45px 25px 30px; /*verifier les marges*/
+
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.blocpage_populaires .fa-chart-line {
+  font-weight: bold;
+  color: black;
+  font-size: 1.05em;
+}
+
+.zone_resultats_populaires {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card_populaires1,
+.card_populaires2,
+.card_populaires3 {
+  width: 340px; /* soit ok 81% ;*/
+  height: 140px;
+  border-radius: 15px;
+  background-color: white;
+  margin-bottom: 40px;
+  box-shadow: 6px 6px 10px rgb(214, 214, 214);
+}
+
+.vignette_populaires {
+  width: 134px; /* soit 39%*/
+  height: 130px;
+  padding: 5px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.lien_populaires {
+  display: flex;
+}
+
+.card_populaires1:hover,
+.card_populaires2:hover,
+.card_populaires3:hover {
+  box-shadow: 15px 15px 10px rgb(214, 214, 214);
+}
+
+.prix {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.prix h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.prix p {
+  margin-top: 0px;
+  margin-left: 10px;
+  font-size: 0.8em;
+}
+
+.notationpop_matin,
+.notationpop_hotes,
+.notationpop_blanc {
+  margin-left: 10px;
+}
+
+.notationpop_hotes .fas:nth-child(5),
+.notationpop_blanc .fas:nth-child(5) {
+  color: #dfdddd;
+}
+
+/*==========================================*/
+/*============SECTION ACTIVITES=============*/
+/*==========================================*/
+
+.blocpage_activites {
+  height: auto; /*1200px;*/
+  margin-top: 30px;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+#activites {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.zone_resultats_activites {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.vignette_act {
+  border-radius: 15px 15px 0 0;
+  width: /*300pxc*/ 100%;
+  height: 385px;
+  object-fit: cover;
+}
+
+.vignette_act_duo {
+  border-radius: 15px 15px 0 0;
+  width: /*300pxc*/ 100%;
+  height: 146px;
+  object-fit: cover;
+}
+
+.card_activites {
+  flex-shrink: 0;
+  height: 450px;
+  border-radius: 15px 15px 15px 15px;
+  width: 300px; /*22.3%    c*/
+  box-shadow: 6px 6px 10px rgb(214, 214, 214);
+  margin: 5px;
+}
+
+.card_activites_duo {
+  flex-shrink: 1;
+  border-radius: 15px 15px 15px 15px;
+  width: 300px; /*22.3%     c*/
+  height: 210px;
+  box-shadow: 6px 6px 10px rgb(214, 214, 214);
+}
+
+.duo_activites {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_activites h3,
+.card_activites_duo h3 {
+  margin-left: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.card_activites:hover,
+.card_activites_duo:hover {
+  box-shadow: 15px 15px 10px rgb(214, 214, 214);
+}
+
+/*==========================================*/
+/*=============SECTION FOOTER==============*/
+/*========================================*/
+
+footer {
+  display: flex;
+}
+
+footer ul {
+/* list-style-type: none;*/
+  padding-left: 0;
+  margin: 0;
+}
+
+.infos_sup {
+  margin: 15px 220px 0px 20px;
+}
+
+.infos_sup h3 {
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+footer li {
+  margin-left: 30px; /* revoir les marges pour version mobile*/
+  margin-bottom: 10px;
+}

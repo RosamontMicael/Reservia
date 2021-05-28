@@ -1,0 +1,565 @@
+/*==============================================*/
+/***********VERSION DESKTOP************/
+/*==============================================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+@media screen and (max-width: 1350px) {
+  /*======================================================*/
+  /*=================PARAMETRES GENERAUX==================*/
+  /*======================================================*/
+
+  header {
+    width: 98%;
+    max-width: 1340px;
+    margin: auto;
+  }
+
+  main {
+    width: 98%;
+    max-width: 1340px;
+    margin: auto;
+  }
+
+  .blocpage_activites {
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    width: 100%;
+  }
+
+  /*==========================================*/
+  /*============SECTION ACTIVITES=============*/
+  /*==========================================*/
+
+  #activites {
+    padding-left: 30px;
+  }
+
+  .zone_resultats_activites {
+    width: 98%;
+    height: 1050px;
+
+    margin: auto;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .vignette_act {
+    height: 200px;
+  }
+
+  .vignette_act_duo {
+    height: 200px;
+  }
+
+  .card_activites {
+    margin: 20px;
+
+    height: 300px;
+    width: 45%;
+  }
+
+  .card_activites_duo {
+    margin-bottom: 30px;
+
+    width: 100%;
+    height: 300px;
+  }
+
+  .duo_activites {
+    margin: 20px;
+    width: 45%;
+  }
+
+  /*=========================================*/
+  /*======SECTION HEBERGEMENT MARSEILLE ======*/
+  /*=========================================*/
+
+  /*******Zone Hebergement Marseille*********/
+
+  .blocpage_hebergements_marseille {
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+  }
+
+  .zone_resultats_hebergements {
+    height: 700px;
+  }
+
+  .card_vignette {
+    width: 30%;
+    height: 300px;
+  }
+
+  .vignette_hebergement {
+    width: 96%;
+    height: 60%;
+  }
+
+  /*===========================================*/
+  /*===========SECTION POPULAIRES==============*/
+  /*===========================================*/
+
+  /*(Inversion blocs Populaires et Hebergements)*/
+
+  #section_hebergements {
+    flex-direction: column-reverse;
+  }
+
+  /**************Zone POPULAIRES**************/
+
+  .blocpage_populaires {
+    width: 100%;
+
+    border-radius: 30px 30px 0 0;
+  }
+  /*******************/
+  .blocpage_populaires h2 {
+    margin: 35px 20px;
+  }
+
+  /********************/
+  .zone_resultats_populaires {
+    align-items: flex-start;
+  }
+
+  .card_populaires1 {
+    width: 50%;
+    margin-left: 10%;
+    margin-bottom: 40px;
+  }
+
+  .card_populaires2 {
+    width: 50%;
+    margin-left: 20%;
+  }
+
+  .card_populaires3 {
+    width: 50%;
+    margin-left: 30%;
+  }
+
+  .vignette_populaires {
+    width: 40%;
+  }
+
+  .notationpop {
+    /* info sans effet voir avec mentor*/
+    font-size: 0.8em;
+
+    margin-left: 10px;
+  }
+  .fa-star {
+    font-size: 0.9em;
+  }
+}
+/*==============================================*/
+/***********VERSION TABLETTE************/
+/*==============================================*/
+
+@media screen and (max-width: 991px) {
+  /*======PARAMETRES GENERAUX A REVERIFIER ======*/
+  #blocpage {
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .logo img {
+    width: 20%;
+    margin-left: 20px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  #section_parametre_choix {
+    margin: 0 20px;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  /*===========================================*/
+  /*======SECTION PARAMATRES ET CHOIX=========*/
+  /*===========================================*/
+
+  /****************Zone Filtres****************/
+
+  .zone_filtres {
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 100%;
+  }
+
+  .designation {
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+
+  .filtres {
+    height: 200px;
+  }
+  .filtres li {
+    margin: 5px;
+  }
+
+  /*===========================================*/
+  /*======SECTION HEBERGEMENTS MARSEILLE=======*/
+  /*===========================================*/
+
+  /*******************************/
+  .blocpage_hebergements_marseille {
+    height: auto;
+
+    border-radius: 0 0 30px 30px;
+  }
+
+  /*******************************/
+
+  .zone_resultats_hebergements {
+    height: auto;
+  }
+
+  /********************************/
+  .card_vignette {
+    width: 45%;
+
+    margin: 15px; /***pour que ca ne se rapproche pas*/
+    margin-bottom: 30px;
+  }
+
+  .card_vignette h3 {
+    margin-bottom: 1%;
+  }
+
+  /*============================================*/
+  /*======SECTION  FOOTER 0- 991 VERIF OK======*/
+  /*============================================*/
+
+  footer {
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    height: auto;
+  }
+
+  .infos_sup {
+    margin: 0;
+  }
+}
+
+/*======================================*/
+/*******VERSION MOBILE*******/
+/*======================================*/
+
+@media screen and (max-width: 770px) {
+  /*======================================*/
+  /*=============SECTION HEADER===========*/
+  /*======================================*/
+
+  header {
+    height: auto;
+    width: 100%;
+  }
+
+  /********Zone Logo et Navigation********/
+  .logo_nav {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-between;
+    height: auto;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .logo img {
+    width: 20%;
+    margin-left: 20px;
+  }
+
+  nav,
+  nav .sinscrire {
+    margin-right: 40px;
+    padding-right: 0;
+  }
+
+  nav {
+    width: 100%; /* ok*/
+    margin: 0;
+    margin: 0;
+  }
+
+  nav ul {
+    width: 100%;
+    padding: 0px;
+  }
+
+  nav ul {
+    /* quel interet ;;;*/
+    justify-content: flex-start;
+    height: 50px;
+  }
+
+  /*************Zone Liens***************/
+  .activ,
+  .heberg {
+    color: #0065fc;
+    border-bottom: 3px #f2f2f2 solid;
+    width: 101%;
+    border-top: none;
+  }
+
+  .heberg {
+    padding: 0;
+    margin: 0;
+    margin: auto;
+    height: 100%;
+  }
+
+  .activ {
+    padding: 0;
+    margin: 0;
+
+    margin: auto;
+  }
+
+  .activ:hover,
+  .heberg:hover {
+    /*border-top: none;*/
+    border-bottom: 3px #0065fc solid;
+    /* padding-top: 0px;*/
+    border-top: none;
+  }
+
+  .sinscrire {
+    /*display: block;
+    position: relative;
+    bottom: 90%;
+    left: 100px;*/ /*160px*/
+    margin: 0 0;
+    padding: 0 0;
+    height: 100%;
+    width: 0px;
+    font-weight: bold;
+    transform: translate(-70px, -45px);
+  }
+
+  nav li:nth-child(1) {
+    width: 50%;
+    padding-bottom: 0px;
+
+    height: 100%;
+  }
+
+  nav a {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    justify-content: center;
+  }
+
+  nav li:nth-child(2) {
+    width: 50%;
+  }
+
+  nav li:nth-child(3) {
+    width: 0px;
+  }
+
+  /*===========================================*/
+  /*=======SECTION PARAMETRES ET CHOIX=========/
+  /*=========================================*/
+
+  /********Zone titre et description*********/
+
+  .zone_Titre_description h1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    font-size: 1.4em;
+    text-align: justify;
+  }
+
+  .zone_Titre_description p {
+    font-size: 0.95em;
+    text-align: justify;
+
+    width: 85%;
+  }
+
+  /**************Zone Recherche***************/
+
+  .cadre_zone_recherche {
+    max-width: 335px;
+  }
+
+  .fa-search {
+    display: block;
+    color: white;
+    font-size: 1em;
+    margin-left: 0;
+    justify-content: flex-start;
+  }
+
+  .cadre_icone_bouton {
+    flex: 1;
+  }
+
+  .bouton_rechercher {
+    display: none;
+  }
+
+  .cadre_icone_bouton {
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  /**************Zone Filtres***************/
+
+  .options:nth-child(2) {
+    order: 2;
+    transform: translate(-45px, 0px);
+  }
+  .options:nth-child(2):hover {
+    transform: translate(-45px, 0px);
+  }
+
+  .options:nth-child(1) {
+    margin-right: auto;
+  }
+
+  .filtres {
+    align-items: flex-start;
+  }
+
+  /*---les filtres a regler plus tard----*/
+
+  .options {
+    margin: 0 0;
+    padding: 0 0;
+    font-weight: bold;
+  }
+
+  .filtres {
+    flex-direction: column; /* modif test*/
+    height: 200px;
+  }
+
+  .zone_filtres {
+    height: 220px;
+  }
+
+  /****************Zone infos*******************/
+
+  .zone_info {
+    margin: auto;
+  }
+  /*============================================*/
+  /*===========SECTION POPULAIRES==============*/
+  /*============================================*/
+
+  .blocpage_populaires {
+    border-radius: 0px;
+  }
+
+  .card_populaires1,
+  .card_populaires2,
+  .card_populaires3 {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  /**************Zone HEBERGEMENTS*************/
+
+  .zone_resultats_hebergements {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card_vignette {
+    width: 90%;
+    height: 250px;
+    margin: 15px; /***pour que ca ne se rapproche pas*/
+    margin-bottom: 30px;
+  }
+
+  .vignette_hebergement {
+    width: 98%;
+    height: 140px;
+    padding: 1%;
+  }
+
+  /*=========================================*/
+  /*===========SECTION ACTIVITES============*/
+  /*=======================================*/
+
+  .zone_resultats_activites {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .vignette_act {
+    height: 130px;
+  }
+
+  .vignette_act_duo {
+    height: 130px;
+  }
+
+  .card_activites {
+    margin: auto;
+    margin-bottom: 25px;
+    padding: 0;
+    width: 90%;
+    height: 190px;
+  }
+
+  .card_activites_duo {
+    margin-bottom: 25px;
+    height: 190px;
+  }
+
+  .duo_activites {
+    width: 90%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card_activites h3 {
+    margin-top: 25px;
+  }
+
+  .card_activites_duo h3 {
+    margin-top: 25px;
+  }
+
+  /*=========================================*/
+  /*==============ZONE FOOTER================*/
+  /*=========================================*/
+
+  footer {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 475px;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+  }
+}
